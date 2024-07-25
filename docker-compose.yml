@@ -1,0 +1,10 @@
+services:
+  # docker compose run gdal bash
+  gdal:
+    image: gdal-image
+    container_name: GDAL
+    build:
+      context: .
+      dockerfile: ./GDAL/container/Dockerfile
+    volumes:
+      - ./GDAL/src:/app
