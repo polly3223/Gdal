@@ -1,5 +1,4 @@
 from osgeo import gdal
-from pathlib import Path
 
 
 def open_geotiff(file_name):
